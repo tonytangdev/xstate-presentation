@@ -1,0 +1,27 @@
+.online-payment-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px 0;
+  background: var(--seconday-bg-color);
+  border-radius: 4px;
+  animation-name: slide-from-right;
+  animation-duration: 1s;
+}
+
+.credit-cards-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template: repeat(1, 1fr) / repeat(3, 1fr); /* 2 rows and 3 columns */
+  padding: 10px 15px;
+}
+
+.btn-active {
+  background: var(--secondary-color);
+  color: var(--secondary-text-color);
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.btn-active:hover {
+  cursor: pointer;
+}

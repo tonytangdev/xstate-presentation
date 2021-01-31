@@ -1,0 +1,92 @@
+:root {
+  --main-bg-color: #fffffc;
+  --seconday-bg-color: #fffffc;
+  --main-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --secondary-color: #06d6a0;
+}
+
+html {
+  background: var(--main-bg-color);
+  color: var(main-text-color);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 600px;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20rem;
+}
+
+.btn {
+  padding: 5px;
+  background: var(--main-bg-color);
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+.btn-big {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+.input {
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid var(--main-text-color);
+}
+
+.input:focus {
+  border-radius: 2px;
+  border: 1px solid var(--secondary-color);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

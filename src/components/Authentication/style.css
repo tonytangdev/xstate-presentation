@@ -1,0 +1,26 @@
+.authentication-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px 0;
+  background: var(--seconday-bg-color);
+  border-radius: 4px;
+  animation-name: slide-from-left;
+  animation-duration: 1s;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.actions-container {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.auth-error {
+  margin-top: 0.5rem;
+  color: red;
+}
